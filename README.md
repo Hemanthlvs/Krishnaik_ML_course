@@ -1,19 +1,19 @@
 # Krishnaik_ML_course
 
-This is an end to end datascience project.
+## This is an end to end datascience project.
 
 ## setup.py
 The setup.py file is essential for packaging and distributing your Python project. It contains key information about your project, such as its name, version, and author. This file allows others to easily install your project using package managers like pip.
 ### Use:
 Easy Installation: Users can install your project with a simple command, making it accessible to others.
 Dependency Management: It helps specify any external libraries your project needs, ensuring users have everything required to run your code.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## .gitignore
 The .gitignore file is used to specify which files or directories Git should ignore when you commit your code. This is particularly useful for excluding files that are not necessary for your project, such as temporary files, logs, or sensitive information.
 ### Use:
 Cleaner Repositories: By ignoring unnecessary files, your repository remains clean and focused on the important code.
 Security: It helps prevent sensitive information (like API keys or passwords) from being accidentally shared in the repository.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## requirements.txt
 The requirements.txt file lists all the external packages that your project depends on. This file allows others to quickly install the necessary packages using a single command.
 ### Use:
