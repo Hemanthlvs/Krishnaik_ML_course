@@ -77,6 +77,10 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Ignore log files
+Logs/
+*.log
+
 # IPython
 profile_default/
 ipython_config.py
