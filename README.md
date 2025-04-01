@@ -71,6 +71,7 @@ This script is responsible for making predictions based on new input data. It in
   - Loads the transformation object and the trained model from the artifacts folder.
   - Transforms the input features using the loaded transformer.
   - Makes predictions using the trained model and returns the predicted values.
+    
 **2. CustomData Class**
   **Initialization:** Accepts various input features such as gender, race/ethnicity, parental education level, lunch status, test preparation course, reading score, and writing score.
   **get_data_as_data_frame Method:**
