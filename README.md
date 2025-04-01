@@ -23,10 +23,15 @@ Version Control: By specifying package versions, it ensures that everyone uses t
 ## Artifacts Folder
 The artifacts folder contains important files created by the machine learning scripts.
 ### Contents:
-**raw_data.csv**: Original datasets used for training and testing./n
+**raw_data.csv**: Original datasets used for training and testing.
+
 **test_data.csv**: Datasets for evaluating model performance.
+
 **train_data.csv**: Datasets used to train the models.
+
 **transformed.pkl**: Processed data ready for training.
+
 **model.pkl**: The trained machine learning model.
+
 These files are essential for running and understanding the machine learning projects.
 
