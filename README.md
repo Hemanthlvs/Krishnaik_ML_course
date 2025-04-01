@@ -94,3 +94,20 @@ Calls the error_msg_detail function to generate a detailed error message.
 Overrides the __str__ method to return the custom error message when the exception is printed.
 3. Testing (Commented Out)
 The script includes a commented-out section that demonstrates how to raise a CustomException by intentionally causing a ZeroDivisionError.
+
+
+## src/logger.py 
+This script sets up a logging mechanism for the project, allowing for the tracking of events and errors during execution.
+
+**Key Components:**
+1. Log File Creation
+The script generates a log file with a timestamp in the format MM_DD_YY_HH_MM_SS.log.
+It creates a directory named Logs in the current working directory to store the log files.
+2. Logging Configuration
+The logging.basicConfig function is used to configure the logging settings:
+Filename: Specifies the path to the log file.
+Format: Defines the format of the log messages, including the timestamp, line number, logger name, log level, and the actual message.
+Level: Sets the logging level to INFO, meaning that all messages at this level and above will be recorded.
+3. Example Logging
+An example log message ("Logging has started.") is recorded to demonstrate the logging functionality.
+
