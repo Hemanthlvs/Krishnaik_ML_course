@@ -78,3 +78,19 @@ This script is responsible for making predictions based on new input data. It in
   
   **get_data_as_data_frame Method:**
   Converts the input features into a Pandas DataFrame format, which can be used for making predictions.
+
+## src/exception.py
+This script defines custom exception handling for the project, providing detailed error messages to aid in debugging.
+
+**Key Components:**
+1. error_msg_detail Function
+This function takes an error and its details as input.
+It extracts the filename and line number where the error occurred.
+It formats and returns a detailed error message, including the script name, line number, and the error message itself.
+2. CustomException Class
+Inherits from the built-in Exception class.
+Initializes with an error message and error details.
+Calls the error_msg_detail function to generate a detailed error message.
+Overrides the __str__ method to return the custom error message when the exception is printed.
+3. Testing (Commented Out)
+The script includes a commented-out section that demonstrates how to raise a CustomException by intentionally causing a ZeroDivisionError.
