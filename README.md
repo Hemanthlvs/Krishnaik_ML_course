@@ -67,6 +67,7 @@ This script is responsible for making predictions based on new input data. It in
 
 **1. pred_pipeline Class**
   **Initialization:** Sets up the prediction pipeline.
+  
   **predict Method:**
   - Loads the transformation object and the trained model from the artifacts folder.
   - Transforms the input features using the loaded transformer.
@@ -74,5 +75,6 @@ This script is responsible for making predictions based on new input data. It in
     
 **2. CustomData Class**
   **Initialization:** Accepts various input features such as gender, race/ethnicity, parental education level, lunch status, test preparation course, reading score, and writing score.
+  
   **get_data_as_data_frame Method:**
   Converts the input features into a Pandas DataFrame format, which can be used for making predictions.
