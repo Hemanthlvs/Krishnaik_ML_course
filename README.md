@@ -150,3 +150,20 @@ Initializes the pred_pipeline class and calls the predict method to get predicti
 Renders the home.html template again, displaying the prediction results.
 4. Running the Application
 The application runs in debug mode on host 0.0.0.0 and port 5000, allowing it to be accessed from any network interface.
+
+## Dockerfile Overview
+The Dockerfile is used to create a Docker image for the Flask web application, allowing for easy deployment and consistency across different environments.
+
+**Key Components:**
+1. Base Image
+FROM python:3.7-slim-buster: Specifies the base image to use, which is a lightweight version of Python 3.7.
+2. Working Directory
+WORKDIR /app: Sets the working directory inside the container to /app, where the application code will reside.
+3. Copying Files
+COPY . /app: Copies all files from the current directory on the host machine to the /app directory in the container.
+4. Updating Package Lists
+RUN apt update -y: Updates the package lists for the APT package manager.
+5. Installing Dependencies
+RUN apt-get update && pip install -r requirements.txt: Installs the required Python packages listed in the requirements.txt file.
+6. Command to Run the Application
+CMD ["python3", "app.py"]: Specifies the command to run the application when the container starts, which executes the app.py script.
