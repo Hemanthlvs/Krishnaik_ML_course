@@ -3,6 +3,7 @@ import dill
 from src.exception import CustomException
 from sklearn.metrics import r2_score
 import pandas as pd
+import sys
 
 def save_obj(file_path, obj):
     try:
@@ -37,7 +38,7 @@ def save_obj(file_path, obj):
 def load_path(file_path):
     try:
         with open(file_path, "rb") as file_obj:
-            return dill.load()
+            return dill.load(file_obj)
         
     except Exception as e:
-        raise CustomException
+        raise CustomException(e, sys)

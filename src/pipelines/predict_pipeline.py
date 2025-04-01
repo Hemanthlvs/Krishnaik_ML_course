@@ -6,7 +6,7 @@ from dataclasses import dataclass
 import os
 import sys
 
-class predict_pipeline():
+class pred_pipeline():
     def __init__(self):
         pass
 
