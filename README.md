@@ -40,14 +40,12 @@ These files are essential for running and understanding the machine learning pro
 
 ## Components Overview :
 The src/components folder contains scripts responsible for data ingestion, transformation, and model training in the machine learning pipeline.
-
 **1. data_ingestion.py**
 This script handles the ingestion of raw data. It performs the following tasks:
 - Reads the raw data from a CSV file.
 - Creates an artifacts folder to store processed data.
 - Splits the data into training and testing sets.
 - Saves the raw, training, and testing datasets as CSV files in the artifacts folder.
-
 
 **2. data_transformer.py**
 This script is responsible for transforming the ingested data. It includes:
