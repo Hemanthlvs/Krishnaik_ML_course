@@ -167,3 +167,13 @@ RUN apt update -y: Updates the package lists for the APT package manager.
 RUN apt-get update && pip install -r requirements.txt: Installs the required Python packages listed in the requirements.txt file.
 6. Command to Run the Application
 CMD ["python3", "app.py"]: Specifies the command to run the application when the container starts, which executes the app.py script.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Docker steps run from terminal:
+
+- docker build -t testdockerkrish.azurecr.io/mltest:latest .
+- docker login testdockerkrish.azurecr.io
+- docker push testdockerkrish.azurecr.io/mltest:latest
