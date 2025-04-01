@@ -22,7 +22,7 @@ class ingestion:
         logging.info("Ingestion started...........")
 
         try:
-            df = pd.read_csv('notebook\data\stud.csv')
+            df = pd.read_csv('notebook/data/stud.csv')
             logging.info("Dataframe Created")
             os.makedirs(os.path.dirname(self.ingestion_paths.raw_path),exist_ok=True)
             logging.info("Artifacts folder created")
