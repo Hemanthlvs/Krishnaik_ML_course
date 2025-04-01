@@ -43,26 +43,20 @@ The src/components folder contains scripts responsible for data ingestion, trans
 
 **1. data_ingestion.py**
 This script handles the ingestion of raw data. It performs the following tasks:
-
 - Reads the raw data from a CSV file.
-
 - Creates an artifacts folder to store processed data.
-
 - Splits the data into training and testing sets.
-
 - Saves the raw, training, and testing datasets as CSV files in the artifacts folder.
 
 
 **2. data_transformer.py**
 This script is responsible for transforming the ingested data. It includes:
-
-
 - Reading the training and testing datasets.
 - Applying preprocessing steps such as imputation and scaling for numeric and categorical features.
 - Standardizing the data and saving the transformation object as a pickle file for future use.
+  
 **3. model_training.py**
 This script focuses on training various machine learning models. It performs the following:
-
-Initializes and trains multiple regression models (e.g., Linear Regression, Random Forest).
-Evaluates the models using R² scores to determine their performance.
-Saves the best-performing model as a pickle file for deployment.
+- Initializes and trains multiple regression models.
+- Evaluates the models using R² scores to determine their performance.
+- Saves the best-performing model as a pickle file for deployment.
