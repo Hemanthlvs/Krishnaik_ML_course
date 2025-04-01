@@ -58,3 +58,20 @@ This script focuses on training various machine learning models. It performs the
 - Initializes and trains multiple regression models.
 - Evaluates the models using R² scores to determine their performance.
 - Saves the best-performing model as a pickle file for deployment.
+
+## Pipelines Overview
+The src/pipelines folder contains scripts that facilitate the prediction process using the trained machine learning model.
+
+**predict_pipeline.py**
+This script is responsible for making predictions based on new input data. It includes the following components:
+
+**1. pred_pipeline Class**
+  **Initialization:** Sets up the prediction pipeline.
+  **predict Method:**
+  - Loads the transformation object and the trained model from the artifacts folder.
+  - Transforms the input features using the loaded transformer.
+  - Makes predictions using the trained model and returns the predicted values.
+**2. CustomData Class**
+  **Initialization:** Accepts various input features such as gender, race/ethnicity, parental education level, lunch status, test preparation course, reading score, and writing score.
+  **get_data_as_data_frame Method:**
+  Converts the input features into a Pandas DataFrame format, which can be used for making predictions.
