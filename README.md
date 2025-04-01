@@ -111,3 +111,42 @@ Level: Sets the logging level to INFO, meaning that all messages at this level a
 3. Example Logging
 An example log message ("Logging has started.") is recorded to demonstrate the logging functionality.
 
+
+## src/utils.py 
+script contains utility functions for saving and loading objects, as well as evaluating machine learning models.
+
+**Key Components:**
+1. save_obj Function
+This function saves a Python object to a specified file path using the dill library.
+It ensures that the directory for the file path exists, creating it if necessary.
+If an error occurs during the saving process, it raises a CustomException.
+2. load_path Function
+This function loads a Python object from a specified file path using the dill library.
+It opens the file in read-binary mode and returns the loaded object.
+If an error occurs during the loading process, it raises a CustomException with the error details.
+3. (Commented Out) evaluate_model Function
+This function, currently commented out, is intended to evaluate multiple machine learning models.
+It would fit each model to the training data, make predictions, and calculate the R² score for both training and testing datasets.
+The results would be stored in a report dictionary.
+
+
+## app.py 
+script sets up a Flask web application that allows users to input data and receive predictions from a machine learning model.
+
+**Key Components:**
+1. Flask Application Setup
+The script imports necessary libraries, including Flask for web development and various data handling libraries.
+It initializes the Flask application.
+2. Home Route
+The @app.route('/') decorator defines the home page route.
+The index function renders the index.html template when the home page is accessed.
+3. Prediction Route
+The @app.route('/predictdata', methods=['GET', 'POST']) decorator defines a route for handling prediction requests.
+GET Request: Renders the home.html template for user input.
+POST Request:
+Collects user input from the form and creates an instance of the CustomData class.
+Converts the input data into a DataFrame using the get_data_as_data_frame method.
+Initializes the pred_pipeline class and calls the predict method to get predictions.
+Renders the home.html template again, displaying the prediction results.
+4. Running the Application
+The application runs in debug mode on host 0.0.0.0 and port 5000, allowing it to be accessed from any network interface.
