@@ -24,7 +24,7 @@ Version Control: By specifying package versions, it ensures that everyone uses t
 The artifacts folder contains important files created by the machine learning scripts.
 ### Contents:
 **raw_data.csv**: Original datasets used for training and testing.
-
+---
 **test_data.csv**: Datasets for evaluating model performance.
 
 **train_data.csv**: Datasets used to train the models.
